@@ -5,35 +5,97 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-/* Center the logo */
-.logo {
-    display: block;
-    margin: 0 auto;
-    /* width: 657px; */
-    margin-top: 200px;
-    padding-bottom: 0px;
-}
-.center {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    color: #454545;
-    margin-top: 0;
-    padding-top: 0;
-    font-family: Ubuntu;
-}
-        
-@media screen and (max-width: 800px) {
-  .logo {
-    margin-top: 100px;
-  }
-}
+        /* Center the logo */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            width: 657px;
+            margin-top: 200px;
+            padding-bottom: 0px;
+        }
+
+        .center {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            color: #454545;
+            margin-top: 0;
+            padding-top: 0;
+            font-family: Ubuntu;
+            width: 100%;
+        }
+
+        /* Tablet styles */
+        @media screen and (max-width: 1024px) {
+            .logo {
+                width: 80%;
+                max-width: 500px;
+                margin-top: 150px;
+            }
+        }
+
+        /* Mobile styles */
+        @media screen and (max-width: 768px) {
+            .logo {
+                width: 90%;
+                max-width: 400px;
+                margin-top: 100px;
+            }
+            
+            body {
+                padding: 15px;
+            }
+        }
+
+        /* Small mobile styles */
+        @media screen and (max-width: 480px) {
+            .logo {
+                width: 95%;
+                max-width: 300px;
+                margin-top: 80px;
+            }
+            
+            body {
+                padding: 10px;
+            }
+        }
+
+        /* Very small screens */
+        @media screen and (max-width: 320px) {
+            .logo {
+                width: 98%;
+                margin-top: 60px;
+            }
+            
+            body {
+                padding: 5px;
+            }
+        }
+
+        /* Landscape orientation on mobile */
+        @media screen and (max-width: 768px) and (orientation: landscape) {
+            .logo {
+                margin-top: 50px;
+                max-width: 350px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="center">
-        <img src="veribaz-logo-new-brown.png" class="logo">
+        <img src="veribaz-logo-new-brown.png" class="logo" alt="Veribaz Logo">
     </div>
 </body>
 </html>
